@@ -17,8 +17,18 @@ public class Main {
                 System.out.println("--Please note that we will be working with the leading coefficients of the terms");
 
                 Quadratic_Formula work = new Quadratic_Formula();
+                Gather_Data firstTerm = new Gather_Data();
+                Gather_Data secTerm = new Gather_Data();
+                Gather_Data thirdTerm = new Gather_Data();
 
-                System.out.println("Your answer is" + work.posQuadForm(ax, bx, c) +"or" + work.negQuadForm(ax, bx, c) +".");
+                int numAX;
+                numAX = firstTerm.ax();
+                int numBX;
+                numBX =  secTerm.bx();
+                int numC;
+                numC = thirdTerm.c();
+                
+                System.out.println("Your answer is" + work.posQuadForm(numAX, numBX, numC) +"or" + work.negQuadForm(numAX, numBX, numC) +".");
 
 
 
